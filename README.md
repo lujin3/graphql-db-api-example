@@ -48,7 +48,7 @@
     graphql server 的数据需要支持 cookies 鉴权, 传入的 cookies 为:  
 
     ```json
-    cookies = {
+    {
         "TSTenant": "ffeb581c-6f23-43d2-b507-e224e04bc82d",
         "EIToken": "xxxx"
     }
