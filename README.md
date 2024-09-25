@@ -2,7 +2,7 @@
 
 本项目提供了 [graphql-db-api](https://github.com/lujin3/graphql-db-api) 的 go demo 示例, 用于适配 superset 的 graphql db 数据源.  
 
-使用 github.com/99designs/gqlgen 框架, 其他框架和语言只要 GraphQL schema 和 query 定义一致即可.
+使用 [gqlgen](github.com/99designs/gqlgen) 框架, 其他框架和语言只要 GraphQL schema 和 query 定义一致即可.
 
 ## 目录
 
