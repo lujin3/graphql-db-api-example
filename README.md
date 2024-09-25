@@ -1,6 +1,8 @@
 # graphql-db-api-example  
 
-本项目提供了 [graphql-db-api](https://github.com/lujin3/graphql-db-api) 的 go demo 示例, 用于适配 superset 的 graphql db 数据源
+本项目提供了 [graphql-db-api](https://github.com/lujin3/graphql-db-api) 的 go demo 示例, 用于适配 superset 的 graphql db 数据源.  
+
+demo 使用 go github.com/99designs/gqlgen 框架, 其他框架和语言只要 GraphQL schema 和 query 定义一致即可.
 
 ## 目录
 
@@ -16,11 +18,21 @@
    在 `graph/schema.graphql` 中更新您的新 schema 定义。例如：
 
    ```graphql
-   type User {
-     id: ID!
-     name: String!
+    type FirefightingData {
+        ts: Int! # 时间戳,若是时序数据必须定义,并且字段名固定为 `ts`
+        building: String! # 指标属性(层级),根据业务数据定义,非必须
+        floor: String! # 指标属性(层级),根据业务数据定义,非必须
+        indicator: String! # 指标属性(层级),根据业务数据定义,非必须
+        value: Int! # 指标的值
+    }
+
+   type Query {
+        firefighting(startTS: Int, endTS: Int, limit: Int): [FirefightingData] # added
    }
    ```
+
+   - 指标属性(层级) 非必须, 如需进行在 BI 中下钻数据,则属性(层级)必须明确且符合下钻场景的层级
+   - 时序数据, ts 字段为必填字段
 
 2. **生成 gqlgen 配置和模型**  
     运行以下命令以生成所需的文件：
@@ -37,7 +49,7 @@
 ### Start the graphql server  
 
 ```bash
-go run github.com/99designs/gqlgen generate
+go run server.go
 ```
 
 
@@ -747,6 +759,7 @@ go run github.com/99designs/gqlgen generate
 ```
 
 ![docs](./graphql-docs.png)
+![query](./query.png)
 
 ### 说明
 
