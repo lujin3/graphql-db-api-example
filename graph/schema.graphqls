@@ -1,0 +1,30 @@
+type FirefightingData {
+  ts: Int!
+  building: String!
+  floor: String!
+  indicator: String!
+  value: Int!
+}
+
+type FactoryData {
+  ts: Int!
+  building: String!
+  area: String!
+  value: Int!
+}
+
+type VendorOnmake {
+  supplyName: String!
+  supplyCode: String!
+  materialName: String!
+  materialType: String!
+  processName: String!
+  opId: Int
+  num: Int!
+}
+
+type Query {
+  firefighting(startTS: Int, endTS: Int, limit: Int): [FirefightingData]
+  factory(startTS: Int, endTS: Int, limit: Int): [FactoryData]
+  vendorOnmake(supplyCode: String, materialType: String): [VendorOnmake]
+}
