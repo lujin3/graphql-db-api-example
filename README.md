@@ -44,6 +44,18 @@
 3. **开发 resolver**  
     在 `graph/schema.resolvers.go` 中实现您新 API 的逻辑。该文件包含负责获取和返回数据的 resolver。
 
+4. **数据权限 (非必须)**  
+    graphql server 的数据需要支持 cookies 鉴权, 传入的 cookies 为:  
+
+    ```json
+    cookies = {
+        "TSTenant": "ffeb581c-6f23-43d2-b507-e224e04bc82d",
+        "EIToken": "xxxx"
+    }
+    ```
+
+    目前只支持 cookies 鉴权 [graphql-db-api engine for superset](https://github.com/lujin3/graphql-db-api/blob/main/graphqldb/db_engine_specs.py) `get_extra_params`
+
 ## 快速开始
 
 ### Start the graphql server  
