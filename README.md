@@ -19,7 +19,7 @@
 
    ```graphql
     type FirefightingData {
-        ts: Int! # 时间戳,若是时序数据必须定义,并且字段名固定为 `ts`
+        ts: Timestamp! # 时间戳,若是时序数据必须定义,并且字段名固定为 `ts`
         building: String! # 指标属性(层级),根据业务数据定义,非必须
         floor: String! # 指标属性(层级),根据业务数据定义,非必须
         indicator: String! # 指标属性(层级),根据业务数据定义,非必须
@@ -220,7 +220,7 @@ go run server.go
                 "name": null,
                 "kind": "NON_NULL",
                 "ofType": {
-                  "name": "Int"
+                  "name": "Timestamp"
                 }
               }
             },
@@ -319,6 +319,11 @@ go run server.go
         },
         {
           "name": "String",
+          "kind": "SCALAR",
+          "fields": []
+        },
+        {
+          "name": "Timestamp",
           "kind": "SCALAR",
           "fields": []
         },

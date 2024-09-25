@@ -1,5 +1,7 @@
+scalar Timestamp
+
 type FirefightingData {
-  ts: Int!
+  ts: Timestamp!
   building: String!
   floor: String!
   indicator: String!
@@ -7,7 +9,7 @@ type FirefightingData {
 }
 
 type FactoryData {
-  ts: Int!
+  ts: Timestamp!
   building: String!
   area: String!
   value: Int!
