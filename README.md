@@ -18,6 +18,8 @@
    在 `graph/schema.graphql` 中更新您的新 schema 定义。例如：
 
    ```graphql
+    scalar Timestamp
+
     type FirefightingData {
         ts: Timestamp! # 时间戳,若是时序数据必须定义,并且字段名固定为 `ts`
         building: String! # 指标属性(层级),根据业务数据定义,非必须
