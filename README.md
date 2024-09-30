@@ -56,7 +56,7 @@
     }
     ```
 
-    目前只支持 cookies 鉴权 [graphql-db-api engine for superset](https://github.com/lujin3/graphql-db-api/blob/main/graphqldb/db_engine_specs.py) `get_extra_params`
+    目前只支持 cookies 鉴权 [graphql-db-api engine for superset](https://github.com/lujin3/graphql-db-api/blob/main/graphqldb/graphql.py) `get_extra_params`
 
 ## 快速开始
 
