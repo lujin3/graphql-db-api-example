@@ -787,3 +787,15 @@ go run server.go
 1. 获取 schema 中所有的 fields 和 type (`queryType["fields"]["type"]["ofType"]["name"]`)
 
 2. 根据 type 获取 type 下 fields (字段)的 name 和 type
+
+### Repo Activity
+<!-- Copy-paste in your Readme.md file -->
+
+<a href="https://next.ossinsight.io/widgets/official/compose-recent-active-contributors?repo_id=862677125&limit=30" target="_blank" style="display: block" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-recent-active-contributors/thumbnail.png?repo_id=862677125&limit=30&image_size=auto&color_scheme=dark" width="655" height="auto">
+    <img alt="Active Contributors of lujin3/graphql-db-api-example - Last 28 days" src="https://next.ossinsight.io/widgets/official/compose-recent-active-contributors/thumbnail.png?repo_id=862677125&limit=30&image_size=auto&color_scheme=light" width="655" height="auto">
+  </picture>
+</a>
+
+<!-- Made with [OSS Insight](https://ossinsight.io/) -->
