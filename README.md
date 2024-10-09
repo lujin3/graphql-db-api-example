@@ -4,6 +4,17 @@
 
 使用 [gqlgen](github.com/99designs/gqlgen) 框架, 其他框架和语言只要 GraphQL schema 和 query 定义一致即可.
 
+<!-- Copy-paste in your Readme.md file -->
+
+<a href="https://next.ossinsight.io/widgets/official/compose-contributors?repo_id=862677125&limit=200" target="_blank" style="display: block" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-contributors/thumbnail.png?repo_id=862677125&limit=200&image_size=auto&color_scheme=dark" width="655" height="auto">
+    <img alt="Contributors of lujin3/graphql-db-api-example" src="https://next.ossinsight.io/widgets/official/compose-contributors/thumbnail.png?repo_id=862677125&limit=200&image_size=auto&color_scheme=light" width="655" height="auto">
+  </picture>
+</a>
+
+<!-- Made with [OSS Insight](https://ossinsight.io/) -->
+
 ## 目录
 
 - [添加新接口](#添加新接口)
